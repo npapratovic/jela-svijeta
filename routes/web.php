@@ -1,6 +1,7 @@
 <?php
+Route::get('/', function () { return redirect('/admin/home'); });
 
-Route::get('/', 'HomeController@apiLinks')->name('apiendpoints');
+Route::get('/apiendpoints', 'HomeController@apiLinks')->name('apiendpoints');
 
 // Authentication Routes...
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('auth.login');
