@@ -98,7 +98,7 @@
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?category=1">category: http://localhost:8000/api/v1/meals?category=1</a> <br /> 
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?language_id=2">language_id: http://localhost:8000/api/v1/meals?language_id=2</a> <br /> 
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?language_id=2&limit=2&category=1">language_id, per_page, category: http://localhost:8000/api/v1/meals?language_id=2&limit=2&category=1</a> <br /> 
-                    <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?language_id=2&limit=3&with=category,tags,ingredients">language_id, per_page = 3, with=category,tags,ingredients: http://localhost:8000/api/v1/meals?language_id=2&limit=3&with=category,tags,ingredients</a> <br /> 
+                    <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?language_id=2&limit=3&with=category,tag,ingredient">language_id, per_page = 3, with=category,tags,ingredient: http://localhost:8000/api/v1/meals?language_id=2&limit=3&with=category,tag,ingredient</a> <br /> 
 
 
 

@@ -45,12 +45,12 @@ class Meal extends Model
         return $this->belongsTo(Category::class, 'category_id')->withTrashed();
     }
     
-    public function tags()
+    public function tag()
     {
         return $this->belongsToMany(Tag::class, 'meal_tag')->withTrashed();
     }
     
-    public function ingredients()
+    public function ingredient()
     {
         return $this->belongsToMany(Ingredient::class, 'meal_ingredient')->withTrashed();
     } 

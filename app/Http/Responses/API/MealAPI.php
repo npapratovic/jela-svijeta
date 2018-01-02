@@ -30,7 +30,7 @@ class MealAPI extends Resource
             ],
 
             'tags' => [
-                $this->tags
+                $this->tag
             ],
 
             'ingredients' => [

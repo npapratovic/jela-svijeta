@@ -48,7 +48,7 @@ class MealsController extends Controller
 
         if (isset($params['with'])) {
             $withParams = explode(',', $params['with']);
-            $filter = array('tags', 'ingredients', 'category');
+            $filter = array('tag', 'ingredient', 'category');
 
             foreach ($withParams as $param) {
 
@@ -68,11 +68,11 @@ class MealsController extends Controller
             }
         }
 
-        if (isset($params['tags'])) {
-            $tags = explode(',', $params['tags']);
+        if (isset($params['tag'])) {
+            $tag = explode(',', $params['tag']);
 
             $query->join('meal_tag', 'meals.id', '=', 'meal_tag.meal_id');
-            $query->whereIn('meal_tag.tag_id', $tags);
+            $query->whereIn('meal_tag.tag_id', $tag);
 
         }
 
