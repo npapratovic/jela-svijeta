@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 27, 2017 at 08:15 AM
+-- Generation Time: Jan 02, 2018 at 01:24 AM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -173,7 +173,19 @@ CREATE TABLE IF NOT EXISTS `meals` (
   KEY `meals_deleted_at_index` (`deleted_at`),
   KEY `101266_5a42895047077` (`category_id`),
   KEY `101266_5a4289504f398` (`language_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `meals`
+--
+
+INSERT INTO `meals` (`id`, `title`, `slug`, `description`, `created_at`, `updated_at`, `deleted_at`, `category_id`, `language_id`) VALUES
+(1, 'Primjer jela 1', 'primjer-jela-1', 'primjer jela jela  opis 1', '2018-01-01 22:14:10', '2018-01-01 22:14:10', NULL, 1, 2),
+(2, 'Primjer jela 2', 'primjer-jela-2', 'primjer jela jela  opis 2', '2018-01-01 22:14:39', '2018-01-01 22:14:39', NULL, 3, 2),
+(3, 'Primjer jela 3', 'primjer-jela-3', 'sasasa', '2018-01-01 22:15:15', '2018-01-01 22:15:15', NULL, 1, 2),
+(4, 'Primjer jela 4', 'primjer-jela-4', 'wqrqwerqwer', '2018-01-01 22:15:36', '2018-01-01 22:15:36', NULL, 1, 2),
+(5, 'Primjer jela 5', 'primjer-jela-5', 'dgsdfgdsfgsd', '2018-01-01 22:15:52', '2018-01-01 22:15:52', NULL, 1, 2),
+(6, 'Primjer jela 6', 'primjer-jela-6', 'lkadkjsfnhd', '2018-01-01 22:16:12', '2018-01-01 22:16:12', NULL, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -189,6 +201,24 @@ CREATE TABLE IF NOT EXISTS `meal_ingredient` (
   KEY `fk_p_101263_101266_meal_t_5a428951e4c94` (`ingredient_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `meal_ingredient`
+--
+
+INSERT INTO `meal_ingredient` (`meal_id`, `ingredient_id`) VALUES
+(1, 1),
+(1, 2),
+(1, 4),
+(2, 2),
+(2, 3),
+(2, 4),
+(3, 1),
+(3, 2),
+(3, 5),
+(4, 1),
+(5, 1),
+(6, 3);
+
 -- --------------------------------------------------------
 
 --
@@ -202,6 +232,26 @@ CREATE TABLE IF NOT EXISTS `meal_tag` (
   KEY `fk_p_101266_101263_tag_me_5a428951e4bd7` (`meal_id`),
   KEY `fk_p_101263_101266_meal_t_5a428951e4c94` (`tag_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `meal_tag`
+--
+
+INSERT INTO `meal_tag` (`meal_id`, `tag_id`) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(2, 1),
+(2, 3),
+(2, 5),
+(3, 2),
+(3, 4),
+(3, 5),
+(4, 2),
+(4, 3),
+(4, 4),
+(5, 2),
+(6, 2);
 
 -- --------------------------------------------------------
 
@@ -355,7 +405,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`, `role_id`, `deleted_at`) VALUES
-(1, 'Admin', 'admin@admin.com', '$2y$10$RddV/3PkYe/qzjylOT4UAuC6tY5zVfVCy9DYx.w5xP1qj0Xso3xmu', 'QUWoYMjMp4PLXSZWXu6wiMwt6HB4ZnNCSyeVT4UAIWMlqU8EE4im8MiVvyjn', '2017-12-27 07:10:25', '2017-12-27 07:10:25', 1, NULL);
+(1, 'Admin', 'admin@admin.com', '$2y$10$RddV/3PkYe/qzjylOT4UAuC6tY5zVfVCy9DYx.w5xP1qj0Xso3xmu', 'KPOrvYoP7NSN4XfDK8FByrLFRwRucXqCtsrDEL2yz1D2Vgx7npuB5IPBjWD2', '2017-12-27 07:10:25', '2017-12-27 07:10:25', 1, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

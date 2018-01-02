@@ -17,7 +17,8 @@
     "doctrine/dbal": "^2.5",
     "fzaninotto/faker": "^1.7",
     "jzonta/faker-restaurant": "^1.0",
-    "unlu/laravel-api-query-builder": "~1.0"
+    "unlu/laravel-api-query-builder": "~1.0",
+    "marcelgwerder/laravel-api-handler": "^0.7.1"
   },
   "require-dev": {
     "filp/whoops": "~2.0",
@@ -31,7 +32,8 @@
     ],
     "psr-4": {
       "App\\": "app/"
-    }
+    },
+    "files": ["app/Http/helpers.php"]
   },
   "autoload-dev": {
     "psr-4": {

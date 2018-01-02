@@ -191,7 +191,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        'Unlu\Laravel\Api\ApiQueryBuilderServiceProvider',
+        Unlu\Laravel\Api\ApiQueryBuilderServiceProvider::class,
+        Marcelgwerder\ApiHandler\ApiHandlerServiceProvider::class,
+
 
 
 
@@ -250,6 +252,8 @@ return [
         'Image'        => Intervention\Image\Facades\Image::class,
         'Form'         => Collective\Html\FormFacade::class,
         'Html'         => Collective\Html\HtmlFacade::class,
+        'ApiHandler' => Marcelgwerder\ApiHandler\Facades\ApiHandler::class,
+
         
     ],
 

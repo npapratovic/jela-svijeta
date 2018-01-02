@@ -84,6 +84,9 @@
 
                 <div >
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals">get_meals: http://localhost:8000/api/v1/meals</a> <br />
+                    <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?id=5">get_meal id: 5 http://localhost:8000/api/v1/meals?id=5</a> <br />
+                     
+
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/categories">get_categories: http://localhost:8000/api/v1/categories</a> <br />
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/tags">get_tags: http://localhost:8000/api/v1/tags</a> <br />
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/ingredients">get_ingredients: http://localhost:8000/api/v1/ingredients</a> <br /> 
@@ -92,8 +95,13 @@
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?id=2">get_meal_by_id: http://localhost:8000/api/v1/meals?id=2</a> <br />
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?limit=3">per_page = 3: http://localhost:8000/api/v1/meals?limit=3</a> <br />
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?limit=3&page=2">3 po stranici, druga stranica: http://localhost:8000/api/v1/meals?limit=3&page=2</a> <br />
-                    <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?category_id=2">category: http://localhost:8000/api/v1/meals?category_id=2</a> <br /> 
+                    <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?category=1">category: http://localhost:8000/api/v1/meals?category=1</a> <br /> 
                     <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?language_id=2">language_id: http://localhost:8000/api/v1/meals?language_id=2</a> <br /> 
+                    <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?language_id=2&limit=2&category=1">language_id, per_page, category: http://localhost:8000/api/v1/meals?language_id=2&limit=2&category=1</a> <br /> 
+                    <a style="font-weight: 700; font-size: 14px; text-decoration: none;" href="http://localhost:8000/api/v1/meals?language_id=2&limit=3&with=category,tags,ingredients">language_id, per_page = 3, with=category,tags,ingredients: http://localhost:8000/api/v1/meals?language_id=2&limit=3&with=category,tags,ingredients</a> <br /> 
+
+
+
                 </div>
             </div>
         </div>

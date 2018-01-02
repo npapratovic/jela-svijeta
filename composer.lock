@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2208a2e5271a61657c2e1644490d97c5",
-    "content-hash": "6a0e0eaf7bbde9f5ef26990a4dd6f6f1",
+    "hash": "caf3ab8d81505e08bdc92dc1453befac",
+    "content-hash": "60acacf4dafa5e0552220383fd8d614a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1322,6 +1322,58 @@
                 "storage"
             ],
             "time": "2017-08-06 17:41:04"
+        },
+        {
+            "name": "marcelgwerder/laravel-api-handler",
+            "version": "v0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marcelgwerder/laravel-api-handler.git",
+                "reference": "1743354271e46a80c7b436bed8e210b3592f236a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marcelgwerder/laravel-api-handler/zipball/1743354271e46a80c7b436bed8e210b3592f236a",
+                "reference": "1743354271e46a80c7b436bed8e210b3592f236a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Marcelgwerder\\ApiHandler\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Gwerder",
+                    "email": "info@marcelgwerder.ch"
+                }
+            ],
+            "description": "Package providing helper functions for a Laravel REST-API ",
+            "homepage": "http://github.com/marcelgwerder/laravel-api-handler",
+            "keywords": [
+                "api",
+                "laravel",
+                "mysql",
+                "parse",
+                "rest",
+                "url"
+            ],
+            "time": "2017-12-02 14:23:20"
         },
         {
             "name": "monolog/monolog",
